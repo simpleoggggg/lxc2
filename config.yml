@@ -1,0 +1,27 @@
+⁨# config.yaml
+# Put this file in the SAME folder as your main (1).py script. :contentReference[oaicite:1]{index=1}
+
+bot:
+  token: ""
+  # IMPORTANT: Quote "!" (or any special YAML chars) so YAML doesn't treat it as a tag.
+  prefix: "!"
+  # IMPORTANT: Must contain at least 1 ID (your script uses admin_ids[0]).
+  admin_ids:
+    - 1373984387674144858   # Main admin (your Discord user ID)
+    - 1373984387674144858   # Optional extra admin
+
+branding:
+  name: "Luxios Hosting"
+  # Integer color for embeds. Hex works (0xRRGGBB).
+  color: 0x1a1a1a
+  footer: "Powered by Luxios"
+
+economy:
+  # Optional (can be omitted / null). If you use it later, keep it as an integer channel ID.
+  afk_channel_id: 1458363802025328816
+  # How often (seconds) the bot runs status/resource checks (default is 60 if omitted).
+  status_interval: 60
+
+lxc:
+  # LXD storage pool name (default is "default" if omitted).
+  pool_name: "default"
